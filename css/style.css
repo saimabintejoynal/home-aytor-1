@@ -1,0 +1,570 @@
+/*
+Template Name: Aytor
+Version: 1.0.0
+Author: Aytor
+
+
+Table of Content
+===========================
+   ********Home Page*********
+   1) Navigation Section
+   2) Banner Section
+   3) Feature Section
+*/
+
+/* Common Css Start */
+body{
+   font-family: 'roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a,button{
+   font-family: 'josefin sans', sans-serif;
+
+}
+h1{
+   Font-family: 'Josefin Sans';
+   font-weight: 700;
+   line-height: 46px;
+   text-align: center;
+   color: var(--text-color);
+   margin-bottom: 20px;
+
+}
+h1,h2,h3,h4,h5,h6,
+p,
+small,span,
+ol,ul{
+   margin: 0;
+   padding: 0;
+}
+ol,ul{
+   list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
+:root {
+   --body-font-one: 'josefin sans', sans-serif;
+   --body-font-two: 'Roboto', sans-serif;
+   --text-color: #11161E;
+   --common-color: #fff;
+   --black-color: #000;
+   --primary-3D-color: #151A32;
+   --primary-1st-color: #FF6F61;
+   --primary-2nd-color: #FF5645;
+   --paragraph-color: #444;
+   --background-color-one: #F1F1F1;
+   --background-color-two: #F1F3F4;
+}
+.product_info{
+   display: inline-block;
+   color: var(--text-color);
+
+}
+.product_info p{
+   color: #444;
+}
+.product_info h3{
+   font-family:var(--body-font-one);
+   font-size: 18px;
+   line-height: 28px;
+}
+.product_rating{
+   color: var(--primary-2nd-color);
+}
+/* //Common Css End */
+
+
+/* Navigation Section Css Start */
+nav #mymenu ul li a{
+    color: #11161E;
+    font-size: 16px;
+    font-family:'Josefin Sans';
+    font-weight:400;
+    line-height: 26px ;
+}
+nav #mymenu ul li:hover > a{
+   color:var(--primary-1st-color);
+}
+.navar_icon ul li button{
+   background: none;
+   border: none;
+}
+.navar_icon ul li button{  
+   position: relative;
+}
+.navar_icon ul li button span{
+   position: absolute;
+   width: 11px;
+   height: 11px;
+   background: var(--primary-1st-color);
+   display: inline-block;
+   font-size: 9px;
+   border-radius: 50%;
+   line-height: 13px;
+   text-align: center;
+   top: -1px;
+   right: 0px;
+}
+
+     
+/* //Navigation Section Css End */
+
+#Banner .banner_slider_dots li{
+   line-height: 0;
+   display: inline-block;   
+}
+#Banner .banner_slider_dots{
+   position: absolute;
+   left:8%;
+   bottom: 35%;
+   
+}
+#Banner .banner_slider_item .banner_content h1{
+   font-size: 64px;
+   Font-family: 'Josefin Sans';
+   font-weight: 700;
+   line-height: 74px;
+   color: var(--common-color);
+   text-align: left;
+
+}
+#Banner .banner_slider_dots li button{
+  background: none;
+  border: none;
+  font-size: 0; 
+  width:10px;
+  height: 6px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: var(--common-color);
+}
+#Banner .banner_slider_dots li.slick-active button{
+   width: 26px;
+   background-color: var(--primary-1st-color);
+}
+#Banner .banner_slider_item a{
+   padding:10px 20px ;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 30px;
+   color: var(--common-color);
+   border: solid 1px var(--primary-1st-color);
+   background-color: var(--primary-1st-color);
+   line-height: 30px;
+
+}
+#Banner .banner_slider_item {
+   height: 800px;
+   color: var(--common-color);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   z-index: 1;
+}
+#Banner .banner_slider_item::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   inset: 0; 
+   background-image: linear-gradient(to right, rgba(2, 5, 19, 0.7), rgba(2, 4, 17, 0.6175), rgba(1, 4, 15, 0.5484), rgba(1, 3, 13, 0.4834),rgba(0, 0, 0, 0));
+   z-index: -1;
+} 
+#Banner .banner_slider_item .banner_content h4,
+#Banner .banner_slider_item .banner_content p{
+   line-height: 28px;
+}
+#Banner .banner_slider_item .banner_content h1{
+   font-size:51px ;
+   line-height: 74px;
+}
+
+/* //Banner css section end */
+
+/*Beauty cream css section start */
+
+#beauty_cream .container{
+   padding:50px 0;
+}
+#beauty_cream .overlay {
+   position: absolute;
+
+}
+#beauty_cream .beauty_item-1{
+   position: relative;
+   padding-bottom: 10px;
+}
+/* //Beauty cream  css section end */
+
+/*New Arrivals Products css section start */
+
+#new_products{
+   margin: 50px 0 10px;
+}
+#new_products .product_info > p {
+   display: inline-block;
+
+}
+#new_products .recent_product_item .product_info{
+   /* align-items: center; */
+   /* justify-content: center; */
+}
+#new_products .old_price{
+   color: #BDBDBD;
+   text-decoration: line-through;
+}
+#new_products .recent_product_slider_icon{
+   color: var(--common-color);
+   width: 30px;
+   height: 50px;
+   text-align: center;
+   font-size: 20px;
+   line-height: 50px;
+   background:#A6AAB7;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 99;
+}
+#new_products .recent_product_slider_icon.fa-chevron-left{
+   left: 16px;
+
+}
+#new_products .recent_product_slider_icon.fa-chevron-right{
+   right: 16px;
+
+}
+#new_products .recent_product_item{
+   position: relative;
+}
+#new_products .product_badge{
+   color: var(--common-color);
+   line-height: 26px;
+   background-color: var(--primary-2nd-color);
+   display: inline-block;
+   position: absolute;
+   top: 0;
+   left:50px;
+   padding: 5px 15px;
+   transform:rotate(-90deg) ;
+   border-radius: 80px 0 0 80px;
+}
+#new_products .recent_product_item .product_icon ul li button{
+   width:36px;
+   height:36px;
+   border: none;
+   background:var(--common-color);
+   border-radius: 50%;
+   color: var(--primary-3D-color);
+   margin-bottom: 10px;
+   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+   transition: .4s;
+   visibility: hidden;
+}
+#new_products .recent_product_item:hover .product_icon ul li button {
+   visibility:visible;
+   transition: .4s;
+
+}
+#new_products .recent_product_item .product_icon ul li button:hover {
+   background-color: var(--primary-2nd-color);
+   color: var(--common-color);
+}
+#new_products .recent_product_item .product_icon{
+   position: absolute;
+   right: 20px;
+   top: 35px;
+}
+#new_products .recent_product_item .product_icon ul li{
+   position: relative;
+}
+#new_products .recent_product_item .product_icon ul li p.product_icon_badge{
+   color: var(--common-color);
+   background-color: var(--primary-3D-color);
+   position: absolute;
+   z-index: 9999;
+   min-width:88px;
+   right: 100%;
+   top: 6px;
+   visibility: hidden;
+   text-align: center;
+}
+
+#new_products .recent_product_item .product_icon ul li:hover p.product_icon_badge{
+   visibility: visible;
+   transition: .4s;
+}
+/* //New Arrivals Products  css section end */
+
+/*Spa_Cosmetics css section start */
+#Spa_Cosmetics {
+   background:#A6AAB7;
+   color: var(--common-color);
+   padding: 90px 0;
+   margin: 80px 0;
+
+}
+#Spa_Cosmetics .Spa_Cosmetics_info h1{
+   font-size: 36px;
+   word-spacing: 5px;
+}
+#Spa_Cosmetics .Spa_Cosmetics_info p{
+   line-height: 28px;
+   font-size:16px;
+   margin-bottom: 10px;
+
+}
+#Spa_Cosmetics .Spa_Cosmetics_info button{
+   padding: 10px 15px;
+   border: none;
+   background: none;
+   border: 1px solid var(--background-color-two);
+   /* background: var(--primary-1st-color); */
+
+
+}
+#Spa_Cosmetics .Spa_Cosmetics_info h1{
+   font-size: 36px;
+   Font-family: 'Josefin Sans';
+   font-weight: 700;
+   line-height: 46px;
+   color: var(--common-color);
+   text-align: left;
+
+}
+
+#Spa_Cosmetics .Spa_Cosmetics_info button a,
+#Spa_Cosmetics .Spa_Cosmetics_info button i{
+   color: var(--common-color);
+}
+#Spa_Cosmetics .Spa_Cosmetics_info button:hover a{
+   color:var(--common-color);
+
+}
+/*Spa_Cosmetics css section end */
+
+/* Best Seller Products css section start  */
+#best_Seller_Products{
+   margin: 50px 0 10px;
+}
+#best_Seller_Products  .product_info > p {
+   display: inline-block;
+
+}
+#best_Seller_Products .old_price{
+   color: #BDBDBD;
+   text-decoration: line-through;
+}
+#best_Seller_Products .see_all_product{
+   padding:8px 15px ;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 30px;
+   border: solid 1px var(--primary-1st-color);
+   background-color: var(--primary-1st-color);
+   line-height: 30px;
+   display: inline-block;
+}
+#best_Seller_Products .see_all_product a{
+   color: var(--common-color);
+}
+/* Best Seller Products css section end */
+/* countdown css part section start  */
+#deals .deals_countdown{ 
+   box-shadow: 0 0 10px 0 rgba(21, 26, 50, 0.1);
+   border-radius: 40px;
+   padding: 5px 50px;
+   
+}
+#deals .deals_countdown_item span{
+   display: block;
+}
+#deals .deals_countdown_item span:first-child{
+   font-family:'Josefin Sans';
+   font-weight: 700;
+   font-size: 24px;
+}
+#deals .deals_countdown .separator{
+   color: var(--primary-1st-color);
+   font-size: 40px;
+}
+/* countdown css part section end */
+/* deals css section start */
+#deals .container .bg-1{
+   box-shadow: 0 0 70px 0 rgba(21, 26, 50, 0.08);
+   padding:0 40px;
+   
+}
+#deals .banner_slider_2 .banner_slider_item{
+   background-color: #A6AAB7;
+   padding:30px 30px;
+   width:608px;
+   height: 485px;
+   margin: 20px 0;
+   margin-right: 16px;
+
+}
+#deals .banner_slider_2 .banner_slider_item h6{
+   color: #11161E;
+   font-family: Josefin Sans;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 28px;
+   letter-spacing: 0em;
+   text-align: left;
+}
+#deals .banner_slider_2 .banner_slider_item h3{
+   Font-family:'Josefin Sans';
+   font-weight:700;
+   Font-size: 36px;
+   Line-height: 46px;
+   text-align: Left;
+   Vertical-align: Top;
+   margin: 15px 0;
+}
+#deals .banner_slider_2 .banner_slider_item >p {
+
+   Font-family: 'Roboto';
+   Font-size: 16px;
+   Line-height: 28px;
+   text-align: Left;
+   Vertical-align: Top;
+   margin-bottom: 20px;
+}
+#deals .banner_slider_2 .banner_slider_item > p {
+   display: inline-block;
+   line-height: 30px;
+   
+}
+#deals .banner_slider_2 .banner_slider_item .old_price{
+   text-decoration: line-through;
+   color: #444;
+}
+#deals .banner_slider_2 .banner_slider_item button{
+  color: var(--common-color);
+  border:none;
+  background: #151A32;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 30px;
+  padding:10px 20px ;
+}
+
+#deals .banner_slider_2 .banner_slider_item a{
+   color: var(--common-color);
+}
+#deals .banner_slider_dots li{
+   display: inline-block;
+}
+#deals .banner_slider_dots li button{
+   background: none;
+   border: none;
+   font-size: 0; 
+   width:10px;
+   height: 6px;
+   border-radius: 5px;
+   margin-right: 5px;
+   background-color: #444; 
+}
+#deals .banner_slider_dots li.slick-active button{
+    width: 26px;
+    background-color: var(--text-color);
+ }
+/* deals css section end */
+/* beauty special offer css section start  */
+#special_offer .special_offer_info{
+   padding:80px 0;
+   padding-left: 80px;
+   margin-top: 60px;
+   background-color: #F1F3F4;
+}
+#special_offer .special_offer_info h6{
+  color: #444;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+#special_offer .special_offer_info h3{
+   color: var(--text-color);
+  Font-family: 'Josefin Sans';
+  font-weight:700;
+  Font-size: 36px;
+  Line-height: 46px;
+  text-align: Left;
+  Vertical-align: Top;
+}
+#special_offer .special_offer_info p{
+   margin: 20px 0;
+   color: #444;
+  Font-family: 'Roboto';
+  Font-size: 16px;
+  Line-height: 28px;
+  text-align: Left;
+  Vertical-align: Top;
+}
+#special_offer .special_offer_info button{
+   background-color: var(--primary-1st-color);
+   border: none;
+   color: var(--common-color);
+   padding: 10px 15px;
+}
+#special_offer .special_offer_info a{
+   color: var(--common-color);
+   
+}
+#special_offer .special_offer_video{
+   margin-top: 60px;   
+
+}
+/* beauty special offer css section end */
+
+/* latest news css section start */
+#latest_news h1{
+   margin-top: 80px;
+}
+#latest_news .latest_news_item .latest_news_info{
+   padding-left: 10px;
+}
+#latest_news .latest_news_item .latest_news_info h3{
+   color: var(--text-color);
+   font-family: 'Josefin Sans';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 30px;
+   letter-spacing: 0em;
+   text-align: left;
+   padding-top: 10px;
+   
+}
+#latest_news .latest_news_item .latest_news_info  p{
+   color: var(--paragraph-color);
+   font-family:'Roboto' ;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+   letter-spacing: 0em;
+   text-align: left;
+
+   
+}
+#latest_news .latest_news_item .latest_news_info button{
+   border: none;
+   background: none;
+   color: var(--paragraph-color);
+
+}
+#latest_news .latest_news_item .latest_news_info a{
+   color: var(--paragraph-color);
+
+}
+
+/* latest news css section end */
